@@ -11,6 +11,11 @@ NoU_Motor backRightMotor(4);
 NoU_Motor intakeMotor(5);
 NoU_Motor elevator(6);
 
+// Servos.
+NoU_Servo stageI(1);
+NoU_Servo stageII(2);
+NoU_Servo clawServo(3);
+
 // Drivetrain.
 
 void setup() {
@@ -28,8 +33,7 @@ void setup() {
 
 void loop() {
   chassis(); 
-  arm();
-  claw();
+  elevator();
   intake();
 
   intakeMotor.set(intakeT);
