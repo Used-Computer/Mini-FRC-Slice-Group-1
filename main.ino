@@ -40,6 +40,7 @@ void loop() {
   chassis(); 
   elevator();
   intake();
+  claw();
 
   intakeMotor.set(intakeT);
   stageI.write(angleI);
